@@ -6,7 +6,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background:linear-gradient( rgba(255, 208, 0, 0.884),rgba(15, 235, 99, 0.534) ),url("img/dots.jpg");
+    background:linear-gradient( rgb(255, 166, 1),rgba(127, 255, 54, 0.425) ),url("img/dots.jpg");
 }
 /* menu */
 .menu{
