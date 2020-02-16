@@ -53,16 +53,55 @@ padding-left: 15%;
 div.menu{
     display:none;
     color:black;
-    background-color: white;
-    font-size:30px;
-    width:40px;
-    height:40px;
+    background-color: transparent;
+    font-size:70px;
+    width:80px;
+    height:80px;
     text-align: center;
     position: fixed;
     z-index: 100;
 }
-
-
+div.menu3{
+    display:block;
+    color:white;
+    background-color: black;
+    font-size:70px;
+    width:30%;
+    height:80px;
+    text-align:left;
+    position: fixed;
+    z-index: 100;
+}
+div.menu3 i{
+    padding-left:10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+ul.menu2{    
+display:block;
+position:fixed;
+top:80px;
+left:0;
+overflow: hidden;
+background-image:url("img/dots.jpg");
+background-color: black;
+list-style-type: none;
+width:30%;
+text-transform: uppercase;
+}
+.menu2 li{
+    width:100%;
+}
+.menu2 li a{
+    display: block;
+    box-sizing: border-box;
+    height: 80px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-family: Roboto, serif;
+    font-size:40px;
+}
 
 @media screen and (max-width:1000px){
     .menu{
@@ -76,6 +115,48 @@ div.menu{
     }
     div.menu:hover{
         background-color: #666666;
+    }
+}
+@media screen and (min-width:1000px){
+    .menu2{
+        text-transform: uppercase;
+        position:sticky;
+        top:0;
+    }
+    ul.menu2{
+    overflow: hidden;
+    background-image:url("img/dots.jpg");
+    background-color: black;
+    list-style-type: none;
+    width:100%;
+    
+    }
+    .menu2 li{
+    float:left;
+    width:8.75%;
+    }
+    .menu2 li a{
+    display: block;
+    box-sizing: border-box;
+    height: 60px;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    text-decoration: none;
+    font-family: Roboto, serif;
+    font-size:20px;
+    }
+    .menu2 li a:hover,.menu2 li a:active{
+    border-bottom-style: solid;
+    border-color:orange;
+    border-width: 3px;
+    transition: 0.1s;
+    }
+    .menu2 li:first-child {
+    padding-left: 15%;
+    }
+    .menu2 li:last-child{
+        padding-right: 15%;
     }
 }
 /* tlo laptop pod menu */
