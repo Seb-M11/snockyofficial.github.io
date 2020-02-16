@@ -101,6 +101,7 @@ text-transform: uppercase;
     text-decoration: none;
     font-family: Roboto, serif;
     font-size:40px;
+    padding:10px;
 }
 
 @media screen and (max-width:1000px){
@@ -118,7 +119,10 @@ text-transform: uppercase;
     }
 }
 @media screen and (min-width:1000px){
-    .menu2{
+    div.menu3{
+        display: none;
+    }
+    ul.menu2{
         text-transform: uppercase;
         position:sticky;
         top:0;
@@ -146,7 +150,7 @@ text-transform: uppercase;
     font-family: Roboto, serif;
     font-size:20px;
     }
-    .menu2 li a:hover,.menu2 li a:active{
+    .menu2 li a:hover,.menu li a:active{
     border-bottom-style: solid;
     border-color:orange;
     border-width: 3px;
