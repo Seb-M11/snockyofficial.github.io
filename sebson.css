@@ -1,0 +1,70 @@
+.sebson {
+  display: inline-block;
+  background: #2ECC40;
+  border-radius: .5em;
+}
+
+.sebson > :only-child {
+  position: relative;
+  display: inline-block;
+  padding: .5em;
+  border-radius: .5em;
+  background: #3D9970;
+  -webkit-transform: translateY(-0.5em);
+          transform: translateY(-0.5em);
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.sebson > :only-child:hover {
+  -webkit-animation: seb infinite .5s alternate ease-in-out;
+          animation: seb infinite .5s alternate ease-in-out;
+}
+
+.sebson > :only-child:active {
+  -webkit-animation-duration: .2s;
+          animation-duration: .2s;
+}
+
+@-webkit-keyframes seb {
+  0% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#3D9970), to(#39CCCC));
+    background: linear-gradient(#3D9970, #39CCCC);
+    -webkit-transform: translateY(-0.5em);
+            transform: translateY(-0.5em);
+  }
+  50% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFDC00), to(#FF851B));
+    background: linear-gradient(#FFDC00, #FF851B);
+    -webkit-transform: translateY(-0.3em);
+            transform: translateY(-0.3em);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#F012BE), to(#B10DC9));
+    background: linear-gradient(#F012BE, #B10DC9);
+    -webkit-transform: translateY(-0.7em);
+            transform: translateY(-0.7em);
+  }
+}
+
+@keyframes seb {
+  0% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#3D9970), to(#39CCCC));
+    background: linear-gradient(#3D9970, #39CCCC);
+    -webkit-transform: translateY(-0.5em);
+            transform: translateY(-0.5em);
+  }
+  50% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFDC00), to(#FF851B));
+    background: linear-gradient(#FFDC00, #FF851B);
+    -webkit-transform: translateY(-0.3em);
+            transform: translateY(-0.3em);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#F012BE), to(#B10DC9));
+    background: linear-gradient(#F012BE, #B10DC9);
+    -webkit-transform: translateY(-0.7em);
+            transform: translateY(-0.7em);
+  }
+}
+/*# sourceMappingURL=style.css.map */

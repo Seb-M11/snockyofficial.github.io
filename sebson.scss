@@ -1,0 +1,61 @@
+$aqua:  #7FDBFF;
+$blue:  #0074D9;
+$navy:  #001F3F;
+$teal:  #39CCCC;
+$green: #2ECC40;
+$olive: #3D9970;
+$lime:  #01FF70;
+$yellow:  #FFDC00;
+$orange:  #FF851B;
+$red:     #FF4136;
+$fuchsia: #F012BE;
+$purple:  #B10DC9;
+$maroon:  #85144B;
+$white:  #FFFFFF;
+$silver: #DDDDDD;
+$gray:   #AAAAAA;
+$black:  #111111;
+
+.sebson {
+  display: inline-block;
+  background: $green;
+  // padding: .5em;
+  border-radius: .5em;
+
+  > :only-child {
+    position: relative;
+    display: inline-block;
+    padding: .5em;
+    border-radius: .5em;
+    background: $olive;
+    transform: translateY(-.5em);
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      animation: seb infinite .5s alternate ease-in-out;
+    }
+
+    &:active {
+      animation-duration: .2s;
+    }
+  }
+}
+
+@keyframes seb {
+  0% { 
+    background: linear-gradient($olive, $teal);
+    transform: translateY(-.5em);
+  }
+
+  50% {
+    background: linear-gradient($yellow, $orange);
+    transform: translateY(-.3em);
+
+  }
+
+  100% {
+    background: linear-gradient($fuchsia, $purple);
+    transform: translateY(-.7em);
+  }
+}
